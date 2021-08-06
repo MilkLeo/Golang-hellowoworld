@@ -1,0 +1,60 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "go 初步学习",
+        "title": "hello world 测试相关接口",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "name": "豆豆",
+            "url": "http://www.swagger.io/support",
+            "email": "951828649@qq.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0"
+    },
+    "host": "这里写接口服务的host",
+    "basePath": "这里写base path",
+    "paths": {
+        "/user/QueryUserInfoById": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户接口"
+                ],
+                "summary": "获取个人用户信息",
+                "responses": {
+                    "200": {
+                        "description": "{\"RetCode\":0,\"UserInfo\":{},\"Action\":\"GetAllUserResponse\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/queryUser": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "用户接口"
+                ],
+                "summary": "获取所有用户",
+                "responses": {
+                    "200": {
+                        "description": "{\"RetCode\":0,\"UserInfo\":{},\"Action\":\"GetAllUserResponse\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+basePath: 这里写base path
+host: 这里写接口服务的host
+info:
+  contact:
+    email: 951828649@qq.com
+    name: 豆豆
+    url: http://www.swagger.io/support
+  description: go 初步学习
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: hello world 测试相关接口
+  version: "1.0"
+paths:
+  /user/QueryUserInfoById:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"RetCode":0,"UserInfo":{},"Action":"GetAllUserResponse"}'
+          schema:
+            type: string
+      summary: 获取个人用户信息
+      tags:
+      - 用户接口
+  /user/queryUser:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"RetCode":0,"UserInfo":{},"Action":"GetAllUserResponse"}'
+          schema:
+            type: string
+      summary: 获取所有用户
+      tags:
+      - 用户接口
+swagger: "2.0"
